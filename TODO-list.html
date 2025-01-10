@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/todo.css">
     <title>TODO LIST</title>
   </head>
   <body>
     <p>TODO List</p>
-    <input type="text" placeholder="TODO Name"  class="input"/>
-    <button
-      onclick="
-            addTodo(); render();
-           "
-    >
+  <div class="input-grid">
+      <input type="text" placeholder="TODO Name"  class="input"/>
+      <input type="date" class="dueDate">
+      <button
+        onclick="
+              addTodo(); render();
+            "
+      >
       Add
     </button>
-    <div class="todolist">
+  </div>
+    <div class="todolist todo-grid" >
+
+      
 
     </div>
 
