@@ -11,7 +11,7 @@ render ();
 function render() {
   let todoListHTML = "";
 
-  todoList.forEach(function(todoObject,index){
+  todoList.forEach((todoObject,index) => {
    
     const name = todoObject.name;
     const dueDate = todoObject.dueDate;
@@ -32,6 +32,11 @@ function render() {
  
   document.querySelector(".todolist").innerHTML = todoListHTML;
 }
+
+
+document.querySelector('.add-btn').addEventListener('click', ()=> {
+  addTodo();
+});
 
 function addTodo() {
   const input = document.querySelector(".input");
